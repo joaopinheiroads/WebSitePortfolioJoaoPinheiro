@@ -43,7 +43,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[#1E0B36] text-white">
       {/* Hero Section */}
-      <section className={`min-h-screen flex flex-col items-center justify-center text-center p-4 transition-opacity duration-800 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+      <section className={`min-h-screen flex flex-col items-center justify-center text-center p-4 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
         <img
           src={imagem1}
           alt="Profile"
