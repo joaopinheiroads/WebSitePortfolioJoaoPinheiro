@@ -25,7 +25,7 @@ function App() {
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col items-center justify-center text-center p-4">
         <img
-          src="src/imagem1.jpg"
+          src="imagem1.jpg"
           alt="Profile"
           className="w-44 h-44 rounded-full mb-12 border-4 border-purple-500 object-cover"
         />
