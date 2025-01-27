@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { FaGithub as Github, FaLinkedin as Linkedin, FaEnvelope as Mail, FaPhone as Phone } from 'react-icons/fa';
-import imagem1 from './imagem1.jpg';
+
 
 function App() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -26,7 +26,7 @@ function App() {
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col items-center justify-center text-center p-4">
         <img
-          src={imagem1}
+          src="../dist/assets/imagem2.PNG"
           alt="Profile"
           className="w-44 h-44 rounded-full mb-12 border-4 border-purple-500 object-cover"
         />
