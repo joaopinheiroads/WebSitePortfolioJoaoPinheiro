@@ -14,35 +14,23 @@ import imagem1 from '../dist/assets/imagem1.jpg';
 import imagem2 from '../dist/assets/imagem2.png';
 import imagem3 from '../dist/assets/imagem3.png';
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 function App() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [showCertificates, setShowCertificates] = useState(false);
 
   const openImage = (src: string) => setSelectedImage(src);
   const closeImage = () => setSelectedImage(null);
+  const toggleCertificates = () => setShowCertificates(!showCertificates);
 
   const certificates = [
-    { id: 1, src: certificado1, title: "Certificado 1" },
-    { id: 2, src: certificado2, title: "Certificado 2" },
-    { id: 3, src: certificado3, title: "Certificado 3" },
-    { id: 4, src: certificado4, title: "Certificado 4" },
-    { id: 5, src: certificado5, title: "Certificado 5" },
-    { id: 6, src: certificado6, title: "Certificado 6" },
-    { id: 7, src: certificado7, title: "Certificado 7" },
-    { id: 8, src: certificado8, title: "Certificado 8" },
-    
+    { id: 1, src: certificado1, title: "Segurança da Informação", description: "Desenvolvimento seguro, Pentest, Linux, KaliLinux, OWASP, LGPD, Firewall, Redes, intranet, entre outros" },
+    { id: 2, src: certificado2, title: "Front-End", description: "JavaScript, Desenvolvimento Web, HTML, CSS, BootStrap, UI e UX" },
+    { id: 3, src: certificado3, title: "Programação orientada a objeto", description: "Linguagem de programação Java, algoritmos e lógica de programação" },
+    { id: 4, src: certificado4, title: "Programmer", description: "Java, Estruturas de Dados e Design de Software" },
+    { id: 5, src: certificado5, title: "Back-End Developer", description: "Desenvolvimento de Aplicações de Banco de Dados, Modelagem de dados, SQL, PL/SQL, PostgreSQL, API, SpringBoot e React" },
+    { id: 6, src: certificado6, title: "Carreira em gestão", description: "Excel, Técnicas de gerenciamento de projetos, Metodologias ágeis, SCRUM e Kanban" },
+    { id: 7, src: certificado7, title: "Start em programação.", description: "JavaScript, HTML e CSS" },
+    { id: 8, src: certificado8, title: "IA", description: "Nocode, Prompts e ferramentas essênciais" },
   ];
 
   return (
@@ -151,11 +139,11 @@ function App() {
       {/* Certificates Section */}
       <section className="py-20 px-4 bg-[#2A1B45]">
         <h2 className="text-4xl font-bold text-center mb-12 text-white">Certificados</h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {certificates.map((cert) => (
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          {certificates.slice(0, showCertificates ? certificates.length : 4).map((cert) => (
             <div
               key={cert.id}
-              className="bg-[#1E0B36] p-3 rounded-lg text-center cursor-pointer hover:scale-105 transition-transform"
+              className="bg-[#1E0B36] p-2 rounded-lg text-center cursor-pointer hover:scale-105 transition-transform"
               onClick={() => openImage(cert.src)}
             >
               <img
@@ -164,9 +152,18 @@ function App() {
                 className="w-full h-100 object-cover rounded mb-4"
               />
               <h3 className="text-xl font-bold mb-4 text-white">{cert.title}</h3>
-              <p className="text-gray-300">Descrição ou detalhes sobre o certificado.</p>
+              <p className="text-gray-300">{cert.description}</p>
+              <p className="text-purple-400 mt-4">Ver Certificado</p>
             </div>
           ))}
+        </div>
+        <div className="text-center mt-8">
+          <button
+            onClick={toggleCertificates}
+            className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg"
+          >
+            {showCertificates ? "Ver Menos" : "Ver Certificados"}
+          </button>
         </div>
       </section>
 
