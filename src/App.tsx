@@ -10,14 +10,14 @@ function App() {
   const closeImage = () => setSelectedImage(null);
 
   const certificates = [
-    { id: 1, src: "src/Certificado1.PNG", title: "Certificado 1" },
-    { id: 2, src: "src/Certificado2.PNG", title: "Certificado 2" },
-    { id: 3, src: "src/Certificado3.PNG", title: "Certificado 3" },
-    { id: 4, src: "src/Certificado4.PNG", title: "Certificado 4" },
-    { id: 5, src: "src/Certificado5.PNG", title: "Certificado 5" },
-    { id: 6, src: "src/Certificado6.PNG", title: "Certificado 6" },
-    { id: 7, src: "src/Certificado7.PNG", title: "Certificado 7" },
-    { id: 8, src: "src/Certificado8.PNG", title: "Certificado 8" },
+    { id: 1, src: "Certificado1.PNG", title: "Certificado 1" },
+    { id: 2, src: "Certificado2.PNG", title: "Certificado 2" },
+    { id: 3, src: "Certificado3.PNG", title: "Certificado 3" },
+    { id: 4, src: "Certificado4.PNG", title: "Certificado 4" },
+    { id: 5, src: "Certificado5.PNG", title: "Certificado 5" },
+    { id: 6, src: "Certificado6.PNG", title: "Certificado 6" },
+    { id: 7, src: "Certificado7.PNG", title: "Certificado 7" },
+    { id: 8, src: "Certificado8.PNG", title: "Certificado 8" },
   ];
 
   return (
@@ -53,7 +53,7 @@ function App() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
           <div className="bg-[#2A1B45] rounded-lg overflow-hidden">
             <img
-              src="src\imagem2.PNG"
+              src="imagem2.PNG"
               alt="PetLife"
               className="w-full h-64 sm:h-72 md:h-80 object-cover object-center"
             />
@@ -73,7 +73,7 @@ function App() {
 
           <div className="bg-[#2A1B45] rounded-lg overflow-hidden">
             <img
-              src="src\imagem3.PNG"
+              src="imagem3.PNG"
               alt="Portfolio"
               className="w-full h-50 sm:h-72 md:h-80 object-cover object-center"
             />
