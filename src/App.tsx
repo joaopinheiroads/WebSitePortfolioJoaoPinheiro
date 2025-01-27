@@ -26,6 +26,7 @@ import imagem3 from '../dist/assets/imagem3.png';
 
 
 
+
 function App() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
