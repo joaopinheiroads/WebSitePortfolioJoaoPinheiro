@@ -2,6 +2,29 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { FaGithub as Github, FaLinkedin as Linkedin, FaEnvelope as Mail, FaPhone as Phone } from 'react-icons/fa';
+import certificado1 from '../dist/assets/certificado1.png';
+import certificado2 from '../dist/assets/certificado2.png';
+import certificado3 from '../dist/assets/certificado3.png';
+import certificado4 from '../dist/assets/certificado4.png';
+import certificado5 from '../dist/assets/certificado5.png';
+import certificado6 from '../dist/assets/certificado6.png';
+import certificado7 from '../dist/assets/certificado7.png';
+import certificado8 from '../dist/assets/certificado8.png';
+import imagem1 from '../dist/assets/imagem1.jpg';
+import imagem2 from '../dist/assets/imagem2.png';
+import imagem3 from '../dist/assets/imagem3.png';
+
+
+
+
+
+
+
+
+
+
+
+
 
 function App() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -10,14 +33,15 @@ function App() {
   const closeImage = () => setSelectedImage(null);
 
   const certificates = [
-    { id: 1, src: "src/Certificado1.PNG", title: "Certificado 1" },
-    { id: 2, src: "src/Certificado2.PNG", title: "Certificado 2" },
-    { id: 3, src: "src/Certificado3.PNG", title: "Certificado 3" },
-    { id: 4, src: "src/Certificado4.PNG", title: "Certificado 4" },
-    { id: 5, src: "src/Certificado5.PNG", title: "Certificado 5" },
-    { id: 6, src: "src/Certificado6.PNG", title: "Certificado 6" },
-    { id: 7, src: "src/Certificado7.PNG", title: "Certificado 7" },
-    { id: 8, src: "src/Certificado8.PNG", title: "Certificado 8" },
+    { id: 1, src: certificado1, title: "Certificado 1" },
+    { id: 2, src: certificado2, title: "Certificado 2" },
+    { id: 3, src: certificado3, title: "Certificado 3" },
+    { id: 4, src: certificado4, title: "Certificado 4" },
+    { id: 5, src: certificado5, title: "Certificado 5" },
+    { id: 6, src: certificado6, title: "Certificado 6" },
+    { id: 7, src: certificado7, title: "Certificado 7" },
+    { id: 8, src: certificado8, title: "Certificado 8" },
+    
   ];
 
   return (
@@ -25,7 +49,7 @@ function App() {
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col items-center justify-center text-center p-4">
         <img
-          src="src/imagem1.jpg"
+          src={imagem1}
           alt="Profile"
           className="w-44 h-44 rounded-full mb-12 border-4 border-purple-500 object-cover"
         />
@@ -53,7 +77,7 @@ function App() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
           <div className="bg-[#2A1B45] rounded-lg overflow-hidden">
             <img
-              src="src\imagem2.PNG"
+              src={imagem2}
               alt="PetLife"
               className="w-full h-64 sm:h-72 md:h-80 object-cover object-center"
             />
@@ -73,7 +97,7 @@ function App() {
 
           <div className="bg-[#2A1B45] rounded-lg overflow-hidden">
             <img
-              src="src\imagem3.PNG"
+              src={imagem3}
               alt="Portfolio"
               className="w-full h-50 sm:h-72 md:h-80 object-cover object-center"
             />
