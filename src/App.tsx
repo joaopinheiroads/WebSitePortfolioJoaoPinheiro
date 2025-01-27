@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { FaGithub as Github, FaLinkedin as Linkedin, FaEnvelope as Mail, FaPhone as Phone } from 'react-icons/fa';
@@ -17,6 +17,13 @@ import imagem3 from '../dist/assets/imagem3.png';
 function App() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [showCertificates, setShowCertificates] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsVisible(true);
+    }, 500);
+  }, []);
 
   const openImage = (src: string) => setSelectedImage(src);
   const closeImage = () => setSelectedImage(null);
@@ -36,14 +43,15 @@ function App() {
   return (
     <div className="min-h-screen bg-[#1E0B36] text-white">
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col items-center justify-center text-center p-4">
+      <section className={`min-h-screen flex flex-col items-center justify-center text-center p-4 transition-opacity duration-800 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
         <img
           src={imagem1}
           alt="Profile"
-          className="w-44 h-44 rounded-full mb-12 border-4 border-purple-500 object-cover"
+          className="w-44 h-44 rounded-full mb-8 border-4 border-purple-500 object-cover hover:animate-expand"
         />
-        <h1 className="text-5xl font-bold mb-2">João Lucas Gomes Pinheiro Developer</h1>
-        <p className="text-xl text-gray-300 mb-8">Full Stack Developer | CyberSecurity</p>
+        <h1 className="text-5xl font-bold mb-2 hover:animate-expand">João Lucas Gomes Pinheiro</h1>
+        <h1 className="text-3xl font-bold mb-8 text-white opacity-75 hover:animate-expand">Developer</h1>
+        <p className="text-xl text-gray-300 mb-2 hover:animate-expand">Full Stack Developer | CyberSecurity</p>
         <div className="flex gap-10">
           <a href="https://github.com/joaopinheiroads" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">
             <Github size={24} />
@@ -68,7 +76,7 @@ function App() {
             <img
               src={imagem2}
               alt="PetLife"
-              className="w-full h-64 sm:h-72 md:h-80 object-cover object-center"
+              className="w-full h-64 sm:h-72 md:h-80 object-cover object-center hover:animate-expand"
             />
             <div className="p-6">
               <h3 className="text-2xl font-bold mb-2">Projeto PetLife</h3>
@@ -88,7 +96,7 @@ function App() {
             <img
               src={imagem3}
               alt="Portfolio"
-              className="w-full h-50 sm:h-72 md:h-80 object-cover object-center"
+              className="w-full h-50 sm:h-72 md:h-80 object-cover object-center hover:animate-expand"
             />
             <div className="p-6">
               <h3 className="text-2xl font-bold mb-2">Site exemplo de portfolio</h3>
