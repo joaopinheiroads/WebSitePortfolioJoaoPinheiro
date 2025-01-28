@@ -106,7 +106,7 @@ function App() {
                 <span className="px-3 py-1 bg-purple-900 rounded-full text-sm">JavaScript</span>
                 <span className="px-3 py-1 bg-purple-900 rounded-full text-sm">CSS</span>
               </div>
-              <a href="https://joaopinheiroads.github.io/TesteWebPortfolio/" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-300 inline-flex items-center">
+              <a href="https://joaopinheiroads.github.io/ProjetoExemploPortfolio/" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-300 inline-flex items-center">
                 Ver Projeto <span className="ml-1">→</span>
               </a>
             </div>
