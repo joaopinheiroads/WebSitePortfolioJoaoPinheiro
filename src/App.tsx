@@ -30,14 +30,16 @@ function App() {
   const toggleCertificates = () => setShowCertificates(!showCertificates);
 
   const certificates = [
-    { id: 1, src: certificado1, title: "Segurança da Informação", description: "Desenvolvimento seguro, Pentest, Linux, KaliLinux, OWASP, LGPD, Firewall, Redes, intranet, entre outros" },
-    { id: 2, src: certificado2, title: "Front-End", description: "JavaScript, Desenvolvimento Web, HTML, CSS, BootStrap, UI e UX" },
-    { id: 3, src: certificado3, title: "Programação orientada a objeto", description: "Linguagem de programação Java, algoritmos e lógica de programação" },
-    { id: 4, src: certificado4, title: "Programmer", description: "Java, Estruturas de Dados e Design de Software" },
+    { id: 1, src: certificado1, title: "Segurança da Informação", description: "Desenvolvimento seguro, Pentest, Linux, KaliLinux, OWASP, LGPD, Firewall, Redes, intranet, Protocolos de Segurança de Rede entre outros" },
+    { id: 2, src: certificado2, title: "Basic Front-End", description: "Desenvolvimento Web, JavaScript, HTML, CSS, BootStrap, UI e UX" },
+    { id: 3, src: certificado3, title: "Programação orientada a objetos", description: "Linguagem de programação Java, algoritmos, estrutura de dados e Design de software" },
+    { id: 4, src: certificado4, title: "Programmer", description: "Java, Lógica de programação e empreendedorismo." },
     { id: 5, src: certificado5, title: "Back-End Developer", description: "Desenvolvimento de Aplicações de Banco de Dados, Modelagem de dados, SQL, PL/SQL, PostgreSQL, API, SpringBoot e React" },
     { id: 6, src: certificado6, title: "Carreira em gestão", description: "Excel, Técnicas de gerenciamento de projetos, Metodologias ágeis, SCRUM e Kanban" },
     { id: 7, src: certificado7, title: "Start em programação.", description: "JavaScript, HTML e CSS" },
     { id: 8, src: certificado8, title: "IA", description: "Nocode, Prompts e ferramentas essênciais" },
+    { id: 8, src: certificado8, title: "Full-Stack Developer", description: "JavaScript, Node.JS, Next.JS, Docker, GitLab, Express, Banco de Dados, API, Dart, Flutter, Arquitetura de computadores"}
+
   ];
 
   return (
