@@ -32,7 +32,7 @@ const projects: Project[] = [
     description:
       'Telas de previsão do tempo para mídia indoor / digital signage exibidas em TVs. Renderização 100% via query string (cidade, clima, idioma, unidade), dois modelos visuais e variações de 1 e 4 dias em HD e Full-HD.',
     tags: ['HTML', 'CSS', 'JavaScript', 'Digital Signage'],
-    href: 'https://github.com/joaopinheiroads',
+    href: 'https://github.com/joaopinheiroads/MyProjectsTVPlayer',
     cta: 'Ver código',
     image: '/img/weather.png',
   },
@@ -41,10 +41,18 @@ const projects: Project[] = [
     description:
       'Back-end REST de cardápio digital multi-tenant em ASP.NET Core. Autenticação JWT com refresh token, EF Core + SQL Server, upload de imagens no Azure Blob Storage, padrão Repository + Unit of Work e soft delete com auditoria.',
     tags: ['C#', '.NET 5', 'ASP.NET Core', 'EF Core', 'SQL Server', 'JWT', 'Azure'],
-    href: 'https://github.com/joaopinheiroads',
+    href: 'https://github.com/joaopinheiroads/MyProjectsTVPlayer',
     cta: 'Ver código',
-    emoji: '🍽️',
-    gradient: 'from-purple-600 to-fuchsia-700',
+    image: '/img/cardapio-api.png',
+  },
+  {
+    title: 'Site Institucional Escolha.ai',
+    description:
+      'Site institucional da plataforma Escolha.ai (cardápio digital): landing page responsiva apresentando a ferramenta, seus modelos de cardápio e chamadas de ação para conversão.',
+    tags: ['HTML', 'CSS', 'JavaScript', 'Landing Page'],
+    href: 'https://escolha.ai',
+    cta: 'Ver projeto',
+    image: '/img/cardapio.png',
   },
   {
     title: 'Projeto PetLife',

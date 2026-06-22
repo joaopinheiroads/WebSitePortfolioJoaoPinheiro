@@ -29,3 +29,8 @@
 .hover\:animate-expand:hover {
   animation: expand 0.5s ease-in-out;
 }
+
+/* Override: altura dos banners dos cards de projeto */
+.h-48 {
+  height: 14rem;
+}
