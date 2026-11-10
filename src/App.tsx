@@ -7,6 +7,7 @@ import {
   FaPhone as Phone,
 } from 'react-icons/fa';
 import CredlyBadges from './CredlyBadges';
+import DiplomaDestaque from './DiplomaDestaque';
 
 type Project = {
   title: string;
@@ -143,6 +144,8 @@ function App() {
           </a>
         </div>
       </section>
+
+      <DiplomaDestaque onAbrirImagem={openImage} />
 
       {/* Projetos */}
       <section className="py-20 px-4">
