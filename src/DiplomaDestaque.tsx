@@ -4,9 +4,8 @@ import { FaGraduationCap, FaShieldAlt, FaCheckCircle, FaCopy, FaExternalLinkAlt 
 const DIPLOMA = {
   imagem: '/certs/diploma-ads.png',
   curso: 'Análise e Desenvolvimento de Sistemas',
-  grau: 'Tecnólogo',
+  titulo: 'Diploma de Graduação',
   instituicao: 'Centro Universitário União das Américas Descomplica',
-  modalidade: 'EAD',
   conclusao: 'Julho de 2026',
   colacao: '13 de agosto de 2026',
   reconhecimento: 'Portaria MEC nº 161/2024',
@@ -35,7 +34,6 @@ function DiplomaDestaque({ onAbrirImagem }: Props) {
 
   const detalhes: { rotulo: string; valor: string }[] = [
     { rotulo: 'Instituição', valor: DIPLOMA.instituicao },
-    { rotulo: 'Modalidade', valor: DIPLOMA.modalidade },
     { rotulo: 'Conclusão', valor: DIPLOMA.conclusao },
     { rotulo: 'Colação de grau', valor: DIPLOMA.colacao },
     { rotulo: 'Reconhecimento', valor: DIPLOMA.reconhecimento },
@@ -62,7 +60,7 @@ function DiplomaDestaque({ onAbrirImagem }: Props) {
             >
               <img
                 src={DIPLOMA.imagem}
-                alt={`Diploma de ${DIPLOMA.grau} em ${DIPLOMA.curso}`}
+                alt={`${DIPLOMA.titulo} em ${DIPLOMA.curso}`}
                 loading="lazy"
                 className="w-full h-auto group-hover:scale-[1.02] transition-transform duration-500"
               />
@@ -76,10 +74,7 @@ function DiplomaDestaque({ onAbrirImagem }: Props) {
                 <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-amber-400/15 text-amber-300">
                   <FaGraduationCap size={30} />
                 </div>
-                <div>
-                  <p className="text-sm text-gray-400">Título conferido</p>
-                  <p className="text-2xl font-bold">{DIPLOMA.grau}</p>
-                </div>
+                <p className="text-2xl font-bold">{DIPLOMA.titulo}</p>
               </div>
 
               <dl className="grid gap-3">
